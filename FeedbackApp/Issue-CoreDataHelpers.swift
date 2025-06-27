@@ -26,9 +26,26 @@ extension Issue {
         modificationDate ?? .now
     }
     
+    var issueStatus: String {
+        if completed {
+            return "Closed"
+        } else {
+            return "Open"
+        }
+    }
+    
     var issueTags: [Tag] {
         let result = tags?.allObjects as? [Tag] ?? []
         return result.sorted()
+    }
+    
+    var issueTagsList: String {
+        guard let tags else { return "No tags" }
+        if tags.count == 0 {
+            return "No tags"
+        } else {
+            return issueTags.map(\.tagName).formatted()
+        }
     }
     
     static var example: Issue {

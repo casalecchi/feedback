@@ -19,6 +19,8 @@
 		6494F0482D4DB6E30048A7B5 /* Issue-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494F0472D4DB6E30048A7B5 /* Issue-CoreDataHelpers.swift */; };
 		6494F04A2D4DB86A0048A7B5 /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494F0492D4DB86A0048A7B5 /* Tag-CoreDataHelpers.swift */; };
 		64F4C2B42E0CAB12006372DF /* IssueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4C2B32E0CAB12006372DF /* IssueRow.swift */; };
+		64F4C2B62E0EE052006372DF /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4C2B52E0EE052006372DF /* IssueView.swift */; };
+		64F4C2B82E0EE059006372DF /* NoIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4C2B72E0EE059006372DF /* NoIssueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		6494F0472D4DB6E30048A7B5 /* Issue-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		6494F0492D4DB86A0048A7B5 /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		64F4C2B32E0CAB12006372DF /* IssueRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRow.swift; sourceTree = "<group>"; };
+		64F4C2B52E0EE052006372DF /* IssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueView.swift; sourceTree = "<group>"; };
+		64F4C2B72E0EE059006372DF /* NoIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoIssueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				64386C462D3B19E8004EB5A6 /* Filter.swift */,
 				64386C422D3B185F004EB5A6 /* SidebarView.swift */,
 				64386C442D3B1866004EB5A6 /* DetailView.swift */,
+				64F4C2B52E0EE052006372DF /* IssueView.swift */,
+				64F4C2B72E0EE059006372DF /* NoIssueView.swift */,
 				64386C3F2D35C2B0004EB5A6 /* DataController.swift */,
 				64386C2F2D349FC4004EB5A6 /* ContentView.swift */,
 				64F4C2B32E0CAB12006372DF /* IssueRow.swift */,
@@ -173,6 +179,8 @@
 				64386C432D3B185F004EB5A6 /* SidebarView.swift in Sources */,
 				64386C302D349FC4004EB5A6 /* ContentView.swift in Sources */,
 				6494F04A2D4DB86A0048A7B5 /* Tag-CoreDataHelpers.swift in Sources */,
+				64F4C2B62E0EE052006372DF /* IssueView.swift in Sources */,
+				64F4C2B82E0EE059006372DF /* NoIssueView.swift in Sources */,
 				64F4C2B42E0CAB12006372DF /* IssueRow.swift in Sources */,
 				64386C2E2D349FC4004EB5A6 /* FeedbackApp.swift in Sources */,
 			);

@@ -22,11 +22,9 @@ struct IssueRow: View {
                         .font(.headline)
                         .lineLimit(1)
                     
-                    ForEach(issue.issueTags) { tag in
-                        Text(tag.tagName)
-                            .foregroundStyle(.secondary)
-                    }
-                    .lineLimit(1)
+                    Text(issue.issueTagsList)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(1)
                 }
                 
                 Spacer()
