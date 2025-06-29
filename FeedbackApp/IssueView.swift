@@ -69,6 +69,11 @@ struct IssueView: View {
             }
         }
         .disabled(issue.isDeleted)
+        // é usado o onReceive invés do onChange pois ele recebe o objectWillChange que o Published manda
+        // no onChange nunca seria trigado, pois a referência é sempre a mesma (issue)
+        .onReceive(issue.objectWillChange, perform: { _ in
+            dataController.queueSave()
+        })
     }
 }
 

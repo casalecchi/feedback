@@ -13,6 +13,8 @@ class DataController: ObservableObject {
     @Published var selectedFilter: Filter? = Filter.all
     @Published var selectedIssue: Issue?
     
+    private var saveTask: Task<Void, Error>?
+    
     static var preview: DataController = {
         let dataController = DataController(inMemory: true)
         dataController.createSampleData()
@@ -79,6 +81,17 @@ class DataController: ObservableObject {
         objectWillChange.send()
         container.viewContext.delete(object)
         save()
+    }
+    
+    func queueSave() {
+        // se já tiver uma Task declarada ele cancela antes de recriá-la
+        saveTask?.cancel()
+        
+        saveTask = Task { @MainActor in
+            // preferível sempre manter as operações do CoreData rodando no MainActor
+            try await Task.sleep(for: .seconds(3))
+            save()
+        }
     }
     
     private func delete(_ fetchRequest: NSFetchRequest<NSFetchRequestResult>) {
